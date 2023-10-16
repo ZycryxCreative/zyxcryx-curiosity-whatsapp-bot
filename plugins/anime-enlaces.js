@@ -1,6 +1,6 @@
-var handler = async (m) =>
-  m.reply(
-    ` 
+var handler = async m => 
+
+m.reply(` 
 ┏━━━━━━━━━━━━━━━━━━━━┅
 ┇                   *「 ANIME」*       
 ┣━━━━━━━━━━━━━━━━━━━━┅
@@ -16,13 +16,12 @@ var handler = async (m) =>
 ┃ ❖ https://pendekarsubs.us
 ┃ ❖ https://myanimelist.net
 ┗━━━━━━━━━━━━━━━━━━━━┅
- `.trim()
-  );
-
-handler.help = ["animelink"];
-handler.tags = ["anime"];
-handler.command = /^animelink$/i;
-
-handler.limit = true;
-
-export default handler;
+ `.trim())
+ 
+ handler.help = ['animelink']
+ handler.tags = ['anime']
+ handler.command = /^animelink$/i
+ 
+ handler.limit = true
+ 
+ export default handler 
